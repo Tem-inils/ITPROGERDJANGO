@@ -1,0 +1,90 @@
+body {
+    background: #2c2c2c;
+}
+/* Стили для блока content */
+
+/* Установите базовый размер для логотипа */
+.logo {
+    width: 150px; /* Ширина, которая вам нравится */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+}
+
+/* На более маленьких экранах уменьшайте размер логотипа */
+@media (max-width: 768px) {
+    .logo {
+        width: 100px; /* Меньший размер для маленьких экранов */
+    }
+}
+
+aside {
+    background: #D2A12C;
+    width: 25%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 350px;
+}
+
+aside h3 {
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+/* Убираем подчеркивание и меняем цвет у ссылок внутри списка */
+aside ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Применяем стили при наведении */
+aside ul li:hover,
+aside ul a:hover {
+    color: black;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+/* Стили для убирания подчеркивания у ссылок с классом .no-underline */
+.no-underline {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+
+    background-color: #2c2c2c;
+    height: calc(100vh - 5%); /* Учитываем высоту панели навигации */
+    color: #fff;
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+}
